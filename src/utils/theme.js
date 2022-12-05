@@ -16,13 +16,17 @@ export const theme = {
     bold: 700,
   },
 
+  fontFamily: {
+    primary: "Roboto",
+  },
+
   colors: {
-    bgPrimary: '#ffffff',
-    bgLight: '#f3f6f9',
+    bgPrimary:'#29E3EC',
+    bgLight: '#E7FEFF',
     bgButton: '#00bcd5',
 
     textLight: '#b1b9c2',
-    textPrimary: 'white',
+    textPrimary: 'black',
 
     bad: 'red',
     neutral: 'grey',
@@ -30,11 +34,6 @@ export const theme = {
   },
 
   sizes: {
-    buttonWidth: '100px',
-    icon: '64px',
-
-    sectionBox: '500px',
-
     xs: '12px',
     s: '14px',
     m: '16px',
