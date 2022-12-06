@@ -10,7 +10,7 @@ export const ButtonFeedback = styled.button`
   outline: none;
   border-radius: ${p => p.theme.radii.md};
   color: ${p => p.theme.colors.textPrimary};
-    focus: ${p => p.theme.colors.bgButton};
+  
   font-weight: bold;
   font-size: ${p => p.theme.fontSizes.m};
   cursor: pointer;

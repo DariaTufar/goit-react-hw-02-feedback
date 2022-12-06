@@ -31,7 +31,7 @@ export const TextTotal = styled.p`
   outline: none;
   border-radius: ${p => p.theme.radii.md};
   color: ${p => p.theme.colors.textPrimary};
-  focus: ${p => p.theme.colors.bgButton};
+ 
   font-weight: bold;
   font-size: ${p => p.theme.fontSizes.m};
   cursor: pointer;
@@ -47,7 +47,7 @@ export const TextPositiveFeedback = styled.p`
   outline: none;
   border-radius: ${p => p.theme.radii.md};
   color: ${p => p.theme.colors.textPrimary};
-  focus: ${p => p.theme.colors.bgButton};
+ 
   font-weight: bold;
   font-size: ${p => p.theme.fontSizes.m};
   cursor: pointer;

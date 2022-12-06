@@ -1,9 +1,12 @@
 import { Box } from 'components/Box';
 import React from 'react';
-import { Number, TextTotal, TextPositiveFeedback, StatisticLine } from './Statistics.styled';
+import {
+  Number,
+  TextTotal,
+  TextPositiveFeedback,
+  StatisticLine,
+} from './Statistics.styled';
 import PropTypes from 'prop-types';
-import { fontSize } from 'styled-system';
- 
 
 export const Statistics = ({ good, neutral, bad, total, positiveFeedback }) => {
   return (
@@ -23,8 +26,7 @@ export const Statistics = ({ good, neutral, bad, total, positiveFeedback }) => {
       </StatisticLine>
 
       <TextPositiveFeedback>
-        <StatisticLine
-          style={{ color: 'green', fontSize:"20px" }}>
+        <StatisticLine style={{ color: 'green', fontSize: '20px' }}>
           Positive feedback : <Number> {positiveFeedback} % </Number>
         </StatisticLine>
       </TextPositiveFeedback>
