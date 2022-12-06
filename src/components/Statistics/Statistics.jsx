@@ -1,29 +1,33 @@
 import { Box } from 'components/Box';
 import React from 'react';
-import { Number, Text } from './Statistics.styled';
+import { Number, TextTotal, TextPositiveFeedback, StatisticLine } from './Statistics.styled';
 import PropTypes from 'prop-types';
+import { fontSize } from 'styled-system';
  
 
 export const Statistics = ({ good, neutral, bad, total, positiveFeedback }) => {
   return (
-    <Box display="flex" flexDirection="row"   >
-      <div>
-        <p>
-          Good : <Number>{good} </Number>
-        </p>
-        <p>
-          Neutral : <Number>{neutral} </Number>
-        </p>
-        <p>
-          Bad : <Number>{bad} </Number>
-        </p>
-        <Text>
-          Total : <Number>{total} </Number>
-        </Text>
-        <Text>
+    <Box display="flex" flexDirection="column">
+      <StatisticLine style={{ color: 'green' }}>
+        Good : <Number>{good} </Number>
+      </StatisticLine>
+      <StatisticLine style={{ color: 'grey' }}>
+        Neutral : <Number>{neutral} </Number>
+      </StatisticLine>
+      <StatisticLine style={{ color: 'orange' }}>
+        Bad : <Number>{bad} </Number>
+      </StatisticLine>
+
+      <StatisticLine>
+        <TextTotal>Total : </TextTotal> <Number>{total} </Number>
+      </StatisticLine>
+
+      <TextPositiveFeedback>
+        <StatisticLine
+          style={{ color: 'green', fontSize:"20px" }}>
           Positive feedback : <Number> {positiveFeedback} % </Number>
-        </Text>
-      </div>
+        </StatisticLine>
+      </TextPositiveFeedback>
     </Box>
   );
 };
